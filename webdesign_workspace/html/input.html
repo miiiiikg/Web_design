@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>input(입력) 관련 태그</title>
+</head>
+<body>
+	<form name="" action="" method="">
+		<!-- readonly: 비활성화,읽기 전용 -->
+		<input type="text" name="" placeholder = "text" value="약오르지" readonly="readonly"><br>
+		<input type="password" name="" placeholder = "password"><br> 
+		<input type="hidden" name="" placeholder = "hidden"><br>
+		<input type="search" name="" placeholder = "search"><br>
+		<input type="url" name="" placeholder = "url"><br>
+		<input type="email" name="" placeholder = "email"><br>
+		<input type="tel" name="" placeholder = "tel"><br>
+		<input type="number" name="" placeholder = "number"><br>
+		<input type="range" name="" placeholder ="range"><br>
+
+		<hr>
+		<input type="file" name=""><br>
+		<!-- 선택을 한개만 가능하다, 만약 두개이상 가능할려면 그룹으로 묶어야한다.  -->
+		<laber><input type="radio" name="subject">JAVA</laber>
+		<laber><input type="radio" name="subject">Python</laber>
+		<laber><input type="radio" name="subject">Oracle</laber><br>
+		<!-- 다중으로 체크 -->
+		<laber><input type="checkbox" name="subject">복숭아</laber>
+		<laber><input type="checkbox" name="subject">포도</laber>
+		<laber><input type="checkbox" name="subject">수박</laber><br>
+		<hr>
+		<!--reset :초기화 
+			submin: form태그 action목적지로 데이터 전달, 유효성체크 불가능함 ex) 검색 
+			button: 함수를 입력하고 명령을 해야 실행, 사용자 정의 버튼, 유효성체크 가능 -->
+		<input type="button" name="" value="제출">
+		<input type="submit" name="">
+		<input type="reset" name="">
+	</form>
+
+</body>
+</html>

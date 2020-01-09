@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>text.html</title>
+	<style type="text/css">
+		#hollywood{
+			font-size: 70px;
+			color:white; /* 글자색 */
+			background-color: black; /* 배경색 */ 
+
+			/* text-decoration
+				-underline : 밑줄
+				-none : 아무것도 안함
+				-line-through : 취소선
+				-overline : 윗줄 */
+			text-decoration : overline; /* 밑줄 */
+
+			/* text-transform
+				- capitalize : 첫글자 대문자 변환
+				- uppercase : 첫글자
+				- lowercase : 소문자
+				- full-width: 전각문자  
+				- none: 아무것도 안함  */
+			text-transform : none;
+
+		}
+
+		#movie{
+			color: dodgerblue;
+			font-size: 100px;
+			/* text-shadow: 텍스트 그림자 효과
+			   (가로거리, 세로거리, 번짐정도, 색상) */
+			 text-shadow: 5px 5px 3px orangered, 1px 10px 6px mediumseagreen;
+			 letter-spacing: 0.2em; /* 자간 */
+		}
+		#actor{
+
+			width: 500px;
+			border: 1px solid black;
+			font-size: 45px;
+			/* text-align : 정렬
+			   start : 현재 텍스트 줄의 시작 위치
+			   end : 현재 텍스트 줄의 끝 위치 
+			   left : 왼족 정렬
+			   right : 오른족 정렬
+			   center : 가운데 정렬
+			   justify : 양쪽애 맞추어 */
+
+			text-align: center;
+
+			line-height: 2; /* 줄간격 (px, 2(글자크기의 2배))*/
+		}
+
+		#aaa {
+			font-size: 45px;
+			width: 500px;
+			height: 300px;
+			border: 3px dashed orangered;
+			margin: 10px;
+			text-align: center;
+			line-height: font300px;
+		}
+	</style>
+</head>
+<body>
+	<span id="hollywood">Do you like hollyword?</span><br>
+	<span id="movie">JAVA Programming</span>
+
+	<div id="actor"> I Love Python I Love Python I Love Python I Love Python I Love Python I Love Python I Love Python I Love Python I Love Python I Love PythonI Love Python I Love Python I Love Python </div>
+
+	<div id="aaa">Oracle DBMS</div>
+</body>
+</html>
