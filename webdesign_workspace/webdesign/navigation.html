@@ -8,7 +8,7 @@
 			padding: 0;
 			margin: 0;
 			font-family: 'Nanum Pen Script', cursive;
-			font-size: 20px;
+			font-size: 40px;
 		}
 		ul{
 			list-style-type: none;
@@ -22,7 +22,7 @@
 		.wrap {
 			width: 100%;
 			height: 50px;
-			background-color: black;
+			background-color: #cb7575;
 		}
 		.ulnav > li > a { /* 자식선택자: .ulnav 바로다음 하위의 li태그들만 선택 1. .ulnav > li > a 2. ulnav a(조심) */
 			float:left;
@@ -30,9 +30,37 @@
 			line-height: 50px;
 			padding: 0 10px; /* 상하: 0 좌우: 10px margin(x)*/
 		}
-		.ulnav > li > a:hover {
-			background-color: orangered;
-
+		.ulnav > li:hover {
+			background-color: #79a8a9;
+		}
+		/* 내 자식만 가능하다.(형제, 부모x) */
+		.ulnav >li:hover .dropdown {
+			display: block;
+		}
+		.ulnav > li {
+			position: relative;
+			display: inline-block;
+			height: 50px;
+		}
+		.dropdown {
+			position: absolute;
+			top: 50px;
+			left: 0;
+			width: 100%;
+			display: none;
+		}
+		.dropdown > a {
+			display: block;
+			background-color: #fffcf0;
+			color: #282c37;
+			font-size: 30px;
+			text-align: center;
+			padding: 3px 0;
+		}
+		.dropdown> a:hover {
+			background-color: #79a8a9;
+			color:white;
+			text-decoration: underline;
 		}
 	</style>
 </head>
@@ -41,7 +69,17 @@
 		<ul class="ulnav"> <!-- 자식, 자손 선택자 -->
 			<li><a href="#">Best</a></li>
 			<li><a href="#">New</a></li>
-			<li><a href="#">아우터</a></li>
+			<li>
+				<a href="#">아우터</a>
+				<div class="dropdown">
+					<a href="#">패딩점퍼</a>
+					<a href="#">가디건</a>
+					<a href="#">야상자켓</a>
+					<a href="#">블레이저</a>
+					<a href="#">코드</a>
+
+				</div>	
+			</li>
 			<li><a href="#">상의</a></li>
 			<li><a href="#">하의</a></li>
 		</ul>

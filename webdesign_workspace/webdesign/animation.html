@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>animation.html : 애니메이션 효과</title>
+	<style type="text/css">
+		p {
+			font-size: 25px;
+		}
+		span {
+			font-size: 100px;
+			color: orangered;
+			font-weight: bold;
+			/* 설정한 애니메이션 이름 */
+			animation-name: twinkle;
+			/* 애니메이션의 반복 횟수 */
+			animation-iteration-count: infinite;
+			/* 애니메이션 실행 시간*/
+			animation-duration: 0.1s;
+		}
+		
+		@keyframes twinkle{
+			0%   {opacity: 0;}
+			100% {opacity: 1;}
+
+			/* from {opacity: 0;}
+			to {opacity: 1;} */
+		}
+	</style>
+</head>
+<body>
+	<p><span> 쫀득 초코칩</span> 맛있다아아아ㅏ아아아ㅏ아아아아ㅏ </p>
+</body>
+</html>
