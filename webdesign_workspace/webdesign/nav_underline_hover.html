@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>nav_underline_hover.html</title>
+	<link rel="stylesheet" type="text/css" href="../common.css">
+	<style type="text/css">
+		body {
+			background-color: #0B0B0B;
+		}
+		div.container{ /* 정가운데 */
+			position: absolute;
+			top: 50%;
+			left :50%;
+			transform: translate(-50%, -50%);/* 이동 (x, y)*/
+		}
+		li {
+			display: inline-block;
+		}
+		li a { 
+			text-decoration: none;
+			display: inline-block;
+			color: #fff;
+			font-family: Source Sans Pro;
+			font-weight: lighter;
+			font-size: 28px;
+			padding: 0 20px;
+		}
+		.cool_link:after {
+			content: '';
+			display: block;
+			width: 0;
+			height: 2px;
+			background-color: #fff;
+			/* 효과 */
+			transition: width .3s;
+		}
+		.cool_link:hover:after {
+			width: 100%;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container"> 
+		<li><a href="#" class="cool_link">HOME</a></li>
+		<li><a href="#" class="cool_link">Search</a></li>
+		<li><a href="#" class="cool_link">About</a></li>
+		<li><a href="#" class="cool_link">Contact</a></li>
+	</div>
+</body>
+</html>
