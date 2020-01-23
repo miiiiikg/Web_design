@@ -1,15 +1,15 @@
 /* 구글 웹폰트*/
-@import url('https://fonts.googleapis.com/css?family=Poor+Story&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap');
 
 /* 공통사항*/
 * {box-sizing: border-box;}
 body {
-	font-family: 'Poor Story', cursive;
+	font-family: 'Nanum Gothic', sans-serif;
 	margin: 0;
 	padding: 0;
-	font-size: 20px;
+	font-size: 15px;
 	color: #222222;
-	font-weight: bold;
+	background-color: #F0E5DE;
 }
 ul {
 	margin: 0;
@@ -64,4 +64,18 @@ button.btn-support {
 button.btn-support:hover {
 	background-color: #C44F6E;
 	border-color : transparent;
+}
+
+/* Text에 밑줄 쳐지는 css효과 */
+.magicline:after {
+	content: '';
+	display: block;
+	width: 0;
+	height: 2.5px;
+	background-color: #506763;
+	/* 효과 */
+	transition: width .3s;
+}
+.magicline:hover:after {
+	width: 100%;
 }
